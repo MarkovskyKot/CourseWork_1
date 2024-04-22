@@ -27,3 +27,5 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/CourseWork_1.iml
+/.idea/

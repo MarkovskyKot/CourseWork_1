@@ -1,0 +1,53 @@
+public class Main {
+    public static void main(String[] args) {
+        Persons person1 = new Persons("Бранов", "Иван", "Петрович");
+        Persons person2 = new Persons("Киселев", "Елисей", "Васильевич");
+        Persons person3 = new Persons("Терешкова", "Надежда", "Петровна");
+        Persons person4 = new Persons("Рублев", "Владислав", "Федорович");
+        Persons person5 = new Persons("Козлова", "Елена", "Владимировна");
+        Persons person6 = new Persons("Васильева", "Анна", "Сергеевна");
+        Persons person7 = new Persons("Захаров", "Дмитрий", "Алексеевич");
+        Persons person8 = new Persons("Сидоров", "Сергей", "Александрович");
+        Persons person9 = new Persons("Смирнов", "Владимир", "Петрович");
+        Persons person10 = new Persons("Алешина", "Александра", "Никитична");
+        Persons person11 = new Persons("Кхюнш", "Герман", "Арнольдович");
+        EmployeeBook employeeBook = new EmployeeBook();
+        employeeBook.addEmployee(person1, 59400, 1);
+        employeeBook.addEmployee(person2, 54600, 2);
+        employeeBook.addEmployee(person3, 57100, 3);
+        employeeBook.addEmployee(person4, 56740, 4);
+        employeeBook.addEmployee(person5, 51870, 5);
+        employeeBook.addEmployee(person6, 59430, 1);
+        employeeBook.addEmployee(person7, 52480, 2);
+        employeeBook.addEmployee(person8, 53670, 3);
+        employeeBook.addEmployee(person9, 54900, 4);
+        employeeBook.addEmployee(person10, 57600, 5);
+        employeeBook.addEmployee(person11, 65600, 1);
+        employeeBook.printEmployees();
+        employeeBook.printNameEmployees();
+        employeeBook.printSumSalary();
+        employeeBook.printMeanSalary();
+        employeeBook.printEmpMinSal();
+        employeeBook.printEmpMaxSal();
+        employeeBook.increaseSalary(10);
+        employeeBook.printEmployees();
+        employeeBook.printSumSalary();
+        employeeBook.printMeanSalary();
+        employeeBook.printEmpMinSal();
+        employeeBook.printEmpMaxSal();
+        employeeBook.printEmpMinSalInGroup(3);
+        employeeBook.printEmpMaxSalInGroup(3);
+        employeeBook.printSumSalaryInGroup(3);
+        employeeBook.printMeanSalaryInGroup(3);
+        employeeBook.increaseSalaryInGroup(3, 10);
+        employeeBook.printEmployeesInGroup(3);
+        employeeBook.printEmployeesSalaryLessThan(60000);
+        employeeBook.increaseSalaryInGroup(3, 10);
+        employeeBook.printEmployeesSalaryMoreThan(65000);
+        employeeBook.findEmployeeFromId(7);
+        employeeBook.deleteEmployee(6);
+        employeeBook.printEmployees();
+        employeeBook.addEmployee(person11, 65600, 1);
+        employeeBook.printEmployees();
+    }
+}
